@@ -217,21 +217,11 @@ st.markdown("""
         font-size: 1rem;
         margin-top: 2rem;
         padding: 1rem;
-        border-top: 1px solid #ddd;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .author {
-        text-align: center;
-        color: #005454;
-        font-size: 1rem;
-        margin-top: 2rem;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
     .copyright img {
         margin-right: 10px;
         width: 50px; /* Adjustable logo size */
@@ -660,7 +650,8 @@ else:
 
     st.markdown(f'<div class="copyright"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="http://ai-lab.sampc.uz/" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 
-st.markdown(f'<div class="author">  Muallif: <a href="https://t.me/axatov_a" class="lab"> Axatov Abror </a> <span class="ekin2">Tel: </span> <span class="ai2">+998(99)-590-52-65</span>.</div>', unsafe_allow_html=True)
+st.markdown(f'<div class="copyright">  Muallif: <a href="https://t.me/axatov_a" class="lab"> Axatov Abror </a> <span class="ekin2">Tel: </span> <span class="ai2">+998(99)-590-52-65</span>.</div>', unsafe_allow_html=True)
+
 
 
 
