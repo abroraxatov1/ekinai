@@ -236,7 +236,7 @@ st.markdown("""
 
     .copyright .lab {
         text-decoration: none;
-        color: #78C841;
+        color: #15803d;
         padding: 0.5rem;
          font-weight: 1.2rem;
 
@@ -648,7 +648,8 @@ if logo_url:
     st.markdown(f'<div class="copyright"><img src="https://www.samdu.uz/new/images/SamDU%20logo%20full%201.png" alt="Logo"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti    </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 else:
 
-    st.markdown(f'<div class="copyright"> <a hraf="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="copyright"> <a hraf="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="http://ai-lab.sampc.uz/" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
+
 
 
 
