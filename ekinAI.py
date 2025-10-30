@@ -451,7 +451,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown('<div class="slider-label" style="cursor: pointer; ">Qatlam (sm)<span class="tooltiptext">' + tooltips["Qatlam (sm)"] + '</span></div>', unsafe_allow_html=True)
     layer_options = ['0-20', '20-40', '40-60', '60-90']
-    selected_layer = st.selectbox('<div class="slider-label"</div>',unsafe_allow_html=True, "", layer_options, label_visibility="collapsed")
+    selected_layer = st.selectbox("", layer_options, label_visibility="collapsed")
     layer_value = (float(selected_layer.split('-')[0]) + float(selected_layer.split('-')[1])) / 2
     st.markdown('<div class="slider-label">Mexanik tarkib<span class="tooltiptext">' + tooltips["Mexanik tarkib"] + '</span></div>', unsafe_allow_html=True)
     mech_comp_encoded = 0
@@ -714,6 +714,7 @@ else:
     st.markdown(f'<div class="copyright"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="http://ai-lab.sampc.uz/" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> <span class="ishlab"> tomonidan ishlab chiqilgan. © 2025 </span> <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 
 st.markdown(f'<div class="author">  Muallif: <a href="https://t.me/axatov_a" class="lab"> Axatov Abror </a> <span class="ekin2">Tel: </span> <span class="ai2"> +998(99)-590-52-65 </span></div>', unsafe_allow_html=True)
+
 
 
 
