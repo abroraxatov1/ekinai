@@ -121,14 +121,18 @@ st.markdown("""
     .result-container:hover {
         box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     }
-    /* Best crop title: large, non-standard font */
+
+    div .eng {
+    text-align: center;
+    
+    }
     .best {
     font-size: 3rem;
         font-weight: bold;
-        color: #10eaf0; 
+        color: #42e3f5; 
         text-align: center;
         margin: 1rem 0;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+
     }
     .best-crop {
         font-size: 3rem;
@@ -589,7 +593,7 @@ if predict_button:
     emoji = crop_emojis.get(best_crop, "🌾")
    
     # Display best crop with emojis below button
-    st.markdown(f'<span class="best"> Eng mos ekin: </span> <span class="best-crop"> {best_crop} ({best_prob:.1f}%) {emoji}</span>', unsafe_allow_html=True)
+    st.markdown(f'<div class="eng"> <span class="best"> Eng mos ekin: </span> <span class="best-crop"> {best_crop} ({best_prob:.1f}%) {emoji}</span> </div>', unsafe_allow_html=True)
    
     with st.container():
         st.subheader("Ekinlarning moslik foizlari (0-100%)")
@@ -710,6 +714,7 @@ else:
     st.markdown(f'<div class="copyright"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="http://ai-lab.sampc.uz/" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> <span class="ishlab"> tomonidan ishlab chiqilgan. © 2025 </span> <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 
 st.markdown(f'<div class="author">  Muallif: <a href="https://t.me/axatov_a" class="lab"> Axatov Abror </a> <span class="ekin2">Tel: </span> <span class="ai2"> +998(99)-590-52-65 </span></div>', unsafe_allow_html=True)
+
 
 
 
