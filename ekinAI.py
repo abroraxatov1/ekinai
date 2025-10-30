@@ -266,7 +266,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 # Logo (thematic placeholder, replace with actual if needed)
-st.markdown('<div class="logo-container"><img src="https://raw.githubusercontent.com/abroraxatov1/soil_dataset/refs/heads/main/J.ico" alt="Logo" width="200"></div>', unsafe_allow_html=True)
+st.markdown('<div class="logo-container"><img src="https://github.com/abroraxatov1/ekinai/blob/main/J%20(1).png" alt="Logo" width="200"></div>', unsafe_allow_html=True)
 # Dataset
 DATA_URL = "ekin7.csv"
 def parse_layer(value):
@@ -649,3 +649,4 @@ if logo_url:
 else:
 
     st.markdown(f'<div class="copyright"> <a hraf="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
+
