@@ -139,7 +139,7 @@ st.markdown("""
     .ai {
         font-weight: bold;
         font-size: 2.5rem;
-        color: #0097b2; /* Blue for AI */
+        color: #10eaf0; /* Blue for AI */
         text-align: center;
     }
     .matn {
@@ -259,7 +259,7 @@ st.markdown("""
     .copyright .ai2 {
         font-weight: bold;
         
-        color: #0097b2; /* Blue for AI */
+        color: #10eaf0; /* Blue for AI */
         
     }
 
@@ -649,6 +649,7 @@ if logo_url:
 else:
 
     st.markdown(f'<div class="copyright"> <a hraf="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
+
 
 
 
