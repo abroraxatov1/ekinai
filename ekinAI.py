@@ -215,8 +215,8 @@ st.markdown("""
         text-align: center;
         color: #005454;
         font-size: 1rem;
-        margin-top: 3rem;
-        border-top: 0.5px solid #f7f7f7;
+        margin-top: 2rem;
+        border-top: 0.5px solid #dedede;
         padding: 1rem;
         display: flex;
         justify-content: center;
@@ -228,17 +228,20 @@ st.markdown("""
         color: #005454;
         font-size: 1rem;
         display: flex;
+        padding: 1rem;
         justify-content: center;
         align-items: center;
     }
 
      
     .copyright img {
+        margin-top: 1rem;
         margin-right: 10px;
         width: 50px; /* Adjustable logo size */
     }
 
     .copyright .samdu {
+        margin-top: 1rem;
         text-decoration: none;
         color: darkcyan;
         padding: 0.5rem;
@@ -246,6 +249,7 @@ st.markdown("""
     }
 
     .copyright .lab {
+        margin-top: 1rem;
         text-decoration: none;
         color: #15803d;
         padding: 0.5rem;
@@ -265,7 +269,8 @@ st.markdown("""
         text-decoration: none;
         color: #43d902;
         padding: 0.5rem;
-         font-weight: 1.2rem;
+        font-weight: 1.2rem;
+        margin-top: 1rem;
 
     }
 
@@ -273,7 +278,7 @@ st.markdown("""
         font-weight: bold;
         padding-left: 0.5rem;
         color: #397639; /* Forest green */
-        
+        margin-top: 1rem; 
     }
 
     .author .ekin2 {
@@ -284,7 +289,7 @@ st.markdown("""
     }
     .copyright .ai2 {
         font-weight: bold;
-        
+        margin-top: 1rem;
         color: #10eaf0; /* Blue for AI */
         
     }
@@ -684,6 +689,7 @@ else:
     st.markdown(f'<div class="copyright"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="http://ai-lab.sampc.uz/" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 
 st.markdown(f'<div class="author">  Muallif: <a href="https://t.me/axatov_a" class="lab"> Axatov Abror </a> <span class="ekin2">Tel: </span> <span class="ai2">+998(99)-590-52-65</span>.</div>', unsafe_allow_html=True)
+
 
 
 
