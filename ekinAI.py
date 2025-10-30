@@ -268,7 +268,7 @@ st.markdown("""
 # Logo (thematic placeholder, replace with actual if needed)
 st.markdown('<div class="logo-container"><img src="https://raw.githubusercontent.com/abroraxatov1/soil_dataset/refs/heads/main/J.ico" alt="Logo" width="200"></div>', unsafe_allow_html=True)
 # Dataset
-DATA_URL = "https://raw.githubusercontent.com/abroraxatov1/ekinai/refs/heads/main/ekin7.csv?token=GHSAT0AAAAAADNA32NDQCNMYDCJT7S46DVS2IDF3JA"
+DATA_URL = "ekin7.csv"
 def parse_layer(value):
     if pd.isna(value):
         return np.nan
@@ -647,4 +647,5 @@ logo_url = "https://www.samdu.uz/new/images/SamDU%20logo%20full%201.png"  # Repl
 if logo_url:
     st.markdown(f'<div class="copyright"><img src="https://www.samdu.uz/new/images/SamDU%20logo%20full%201.png" alt="Logo"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti    </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 else:
+
     st.markdown(f'<div class="copyright"> <a hraf="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
