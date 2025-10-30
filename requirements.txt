@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+sklearn
+RandomForestClassifier
+imblearn
+plotly
+io
+openpyxl
+PIL
+os
