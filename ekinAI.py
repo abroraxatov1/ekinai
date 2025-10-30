@@ -356,7 +356,7 @@ def train_model(df):
     valid_std = np.std(valid_scores, axis=1)
     return rf, X.columns.tolist(), test_acc, cv_acc, train_acc, report, feature_importances, train_sizes, train_mean, train_std, valid_mean, valid_std
 st.set_page_config(page_title="Ekin tavfsiyasi", layout="wide")
-st.markdown(f'<span class="ekin">Ekin</span> <span class="ai">AI</span> <span class="matn"> - Tuproq ma\'lumotlari asosida ekin tavsiya qilish tizimi</span>', unsafe_allow_html=True)
+st.markdown(f'<span class="ekin">Ekin</span> <span class="ai">AI</span> <span class="matn"> - Tuproq ma\'lumotlari asosida ekin tavsiya qilish AI tizimi</span>', unsafe_allow_html=True)
 with st.spinner("Model ishga tushirilmoqda..."):
     df, le_dict, le_crop, crop_averages = load_and_preprocess()
     rf, feature_names, test_acc, cv_acc, train_acc, report, feature_importances, train_sizes, train_mean, train_std, valid_mean, valid_std = train_model(df)
@@ -649,4 +649,5 @@ if logo_url:
 else:
 
     st.markdown(f'<div class="copyright"> <a hraf="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="#" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> tomonidan ishlab chiqilgan. © 2025 <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
+
 
