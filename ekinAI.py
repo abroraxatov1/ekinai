@@ -130,20 +130,24 @@ st.markdown("""
         margin: 1rem 0;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
+    div .text {
+    font-size: 2.5rem;
+    text-align: center;
+    }
     .ekin {
         font-weight: bold;
-        font-size: 2rem;
+        
         color: #397639; /* Forest green */
         text-align: center;
     }
     .ai {
         font-weight: bold;
-        font-size: 2rem;
+        
         color: #10eaf0; /* Blue for AI */
         text-align: center;
     }
     .matn {
-        font-size: 2rem;
+        
         color: #000;
         text-align: center;
     }
@@ -403,7 +407,7 @@ def train_model(df):
     valid_std = np.std(valid_scores, axis=1)
     return rf, X.columns.tolist(), test_acc, cv_acc, train_acc, report, feature_importances, train_sizes, train_mean, train_std, valid_mean, valid_std
 st.set_page_config(page_title="Ekin tavfsiyasi", layout="wide")
-st.markdown(f'<span class="ekin">Ekin</span> <span class="ai">AI</span> <span class="matn"> <span class="ekin"> - Tuproq tarkibi asosida ekinlarning hosildorligini aniqlashning </span> <span class="ai"> sun\'iy intellekt tizimi</span> </span>', unsafe_allow_html=True)
+st.markdown(f'<div class="text"><span class="ekin">Ekin</span> <span class="ai">AI</span> <span class="matn"> <span class="ekin"> - Tuproq tarkibi asosida ekinlar hosildorligini aniqlashning </span> <span class="ai"> sun\'iy intellekt </span> tizimi </span></div>', unsafe_allow_html=True)
 with st.spinner("Tizim ishga tushirilmoqda..."):
     df, le_dict, le_crop, crop_averages = load_and_preprocess()
     rf, feature_names, test_acc, cv_acc, train_acc, report, feature_importances, train_sizes, train_mean, train_std, valid_mean, valid_std = train_model(df)
@@ -697,6 +701,7 @@ else:
     st.markdown(f'<div class="copyright"> <a href="https://www.samdu.uz/uz" class="samdu"> Samarqand davlat universiteti  </a> <a href="http://ai-lab.sampc.uz/" class="lab"> "Sun\'iy intellekt labaratoriyasi" </a> <span class="ishlab"> tomonidan ishlab chiqilgan. © 2025 </span> <span class="ekin2">Ekin</span> <span class="ai2"> AI</span>.</div>', unsafe_allow_html=True)
 
 st.markdown(f'<div class="author">  Muallif: <a href="https://t.me/axatov_a" class="lab"> Axatov Abror </a> <span class="ekin2">Tel: </span> <span class="ai2"> +998(99)-590-52-65 </span></div>', unsafe_allow_html=True)
+
 
 
 
